@@ -6,7 +6,7 @@ def find_even_values(src)
 =begin
   src.length.times do |index|
     src[index].length.times do |inner_index|
-      if src[index][inner_index] % 2 == 0
+      if src[index][inner_index].even?
         p src[index][inner_index]
       end
     end
@@ -18,7 +18,7 @@ def find_even_values(src)
     inner_count = 0
     while inner_count < src[count].length do 
       
-      if src[count][inner_count].odd?
+      if src[count][inner_count].even?
         p src[count][inner_count]
       end
       inner_count += 1
