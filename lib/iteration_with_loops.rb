@@ -18,7 +18,7 @@ def find_even_values(src)
     inner_count = 0
     while inner_count < src[count].length do 
       
-      if src[count][inner_count].even?
+      if src[count][inner_count].odd?
         p src[count][inner_count]
       end
       inner_count += 1
